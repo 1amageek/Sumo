@@ -1,6 +1,6 @@
 # Sumo
 
-<img src="https://github.com/1amageek/Sumo/blob/master/sumo.png" width="120px">
+<img src="https://github.com/1amageek/Sumo/blob/master/sumo.png" width="240px">
 
 Sumo is a library that prepares for fast upload for iOS.
 It is effective when uploading by selecting images continuously.
