@@ -4,6 +4,11 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
+		<key>Keiko.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>6</integer>
+		</dict>
 		<key>Sumo.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
@@ -18,6 +23,21 @@
 			<true/>
 		</dict>
 		<key>124A9D9C1E9CCD4B000E07E8</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>124A9DBB1E9CD028000E07E8</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>124A9DCE1E9CD028000E07E8</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>124A9DDF1E9CD03F000E07E8</key>
 		<dict>
 			<key>primary</key>
 			<true/>

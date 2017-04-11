@@ -1,0 +1,6 @@
+framework module Pods_SumoTests {
+  umbrella header "Pods-SumoTests-umbrella.h"
+
+  export *
+  module * { export * }
+}

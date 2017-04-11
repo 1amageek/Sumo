@@ -1,0 +1,18 @@
+PODS:
+  - Nimble (6.1.0)
+  - NVHTarGzip (1.0.1)
+  - Quick (1.1.0)
+
+DEPENDENCIES:
+  - Nimble
+  - NVHTarGzip
+  - Quick
+
+SPEC CHECKSUMS:
+  Nimble: c53e6903fee94041b90ded74f135820437d8bf59
+  NVHTarGzip: 74cc227b902e5725900d37eb6d79b57e93005a73
+  Quick: dafc587e21eed9f4cab3249b9f9015b0b7a7f71d
+
+PODFILE CHECKSUM: d58fa70b42f9f9d119d9bd77ab6c94880647e48e
+
+COCOAPODS: 1.1.1

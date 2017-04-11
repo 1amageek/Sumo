@@ -1,0 +1,6 @@
+framework module NVHTarGzip {
+  umbrella header "NVHTarGzip-umbrella.h"
+
+  export *
+  module * { export * }
+}

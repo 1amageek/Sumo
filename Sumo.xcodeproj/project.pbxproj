@@ -7,9 +7,29 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0A7F3AA5116D1C2544CD7D4B /* Pods_Keiko.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5390A45D5860C40221FCDD15 /* Pods_Keiko.framework */; };
 		124A9D9E1E9CCD4B000E07E8 /* Sumo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 124A9D941E9CCD4B000E07E8 /* Sumo.framework */; };
 		124A9DA31E9CCD4B000E07E8 /* SumoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 124A9DA21E9CCD4B000E07E8 /* SumoTests.swift */; };
 		124A9DA51E9CCD4B000E07E8 /* Sumo.h in Headers */ = {isa = PBXBuildFile; fileRef = 124A9D971E9CCD4B000E07E8 /* Sumo.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		124A9DAF1E9CCEF9000E07E8 /* Sumo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 124A9DAE1E9CCEF9000E07E8 /* Sumo.swift */; };
+		124A9DB11E9CCF09000E07E8 /* Data+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 124A9DB01E9CCF09000E07E8 /* Data+.swift */; };
+		124A9DB31E9CCF27000E07E8 /* Sumo+Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = 124A9DB21E9CCF27000E07E8 /* Sumo+Item.swift */; };
+		124A9DB51E9CCF33000E07E8 /* Sumo+Session.swift in Sources */ = {isa = PBXBuildFile; fileRef = 124A9DB41E9CCF33000E07E8 /* Sumo+Session.swift */; };
+		124A9DB71E9CCF45000E07E8 /* Sumo+FileManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 124A9DB61E9CCF45000E07E8 /* Sumo+FileManager.swift */; };
+		124A9DE31E9CD03F000E07E8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 124A9DE21E9CD03F000E07E8 /* AppDelegate.swift */; };
+		124A9DE51E9CD03F000E07E8 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 124A9DE41E9CD03F000E07E8 /* ViewController.swift */; };
+		124A9DE81E9CD03F000E07E8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 124A9DE61E9CD03F000E07E8 /* Main.storyboard */; };
+		124A9DEA1E9CD03F000E07E8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 124A9DE91E9CD03F000E07E8 /* Assets.xcassets */; };
+		124A9DED1E9CD03F000E07E8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 124A9DEB1E9CD03F000E07E8 /* LaunchScreen.storyboard */; };
+		124A9DF81E9CD059000E07E8 /* AssetSectionInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 124A9DF21E9CD059000E07E8 /* AssetSectionInfo.swift */; };
+		124A9DF91E9CD059000E07E8 /* FAMImagePickerNavigationHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 124A9DF31E9CD059000E07E8 /* FAMImagePickerNavigationHeader.swift */; };
+		124A9DFA1E9CD059000E07E8 /* MediaPickerCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 124A9DF41E9CD059000E07E8 /* MediaPickerCell.swift */; };
+		124A9DFB1E9CD059000E07E8 /* MediaPickerController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 124A9DF51E9CD059000E07E8 /* MediaPickerController.swift */; };
+		124A9DFC1E9CD059000E07E8 /* MediaPickerHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 124A9DF61E9CD059000E07E8 /* MediaPickerHeader.swift */; };
+		124A9DFD1E9CD059000E07E8 /* MediaPickerProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 124A9DF71E9CD059000E07E8 /* MediaPickerProtocol.swift */; };
+		124A9DFF1E9CD97E000E07E8 /* siko.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 124A9DFE1E9CD97E000E07E8 /* siko.jpg */; };
+		6677DE2AEFB6C9481F568C2A /* Pods_SumoTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7EEAE3D24F1B4F933852D800 /* Pods_SumoTests.framework */; };
+		C30EDDC26A0ECC96618E0920 /* Pods_Sumo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A88FA029E478C36BE19A2894 /* Pods_Sumo.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -23,12 +43,40 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		07059E01320D4B6203B8FED8 /* Pods-SumoTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SumoTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-SumoTests/Pods-SumoTests.release.xcconfig"; sourceTree = "<group>"; };
 		124A9D941E9CCD4B000E07E8 /* Sumo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Sumo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		124A9D971E9CCD4B000E07E8 /* Sumo.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Sumo.h; sourceTree = "<group>"; };
 		124A9D981E9CCD4B000E07E8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		124A9D9D1E9CCD4B000E07E8 /* SumoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SumoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		124A9DA21E9CCD4B000E07E8 /* SumoTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SumoTests.swift; sourceTree = "<group>"; };
 		124A9DA41E9CCD4B000E07E8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		124A9DAE1E9CCEF9000E07E8 /* Sumo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Sumo.swift; sourceTree = "<group>"; };
+		124A9DB01E9CCF09000E07E8 /* Data+.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Data+.swift"; sourceTree = "<group>"; };
+		124A9DB21E9CCF27000E07E8 /* Sumo+Item.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Sumo+Item.swift"; sourceTree = "<group>"; };
+		124A9DB41E9CCF33000E07E8 /* Sumo+Session.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Sumo+Session.swift"; sourceTree = "<group>"; };
+		124A9DB61E9CCF45000E07E8 /* Sumo+FileManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Sumo+FileManager.swift"; sourceTree = "<group>"; };
+		124A9DE01E9CD03F000E07E8 /* Keiko.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Keiko.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		124A9DE21E9CD03F000E07E8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		124A9DE41E9CD03F000E07E8 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		124A9DE71E9CD03F000E07E8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		124A9DE91E9CD03F000E07E8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		124A9DEC1E9CD03F000E07E8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		124A9DEE1E9CD03F000E07E8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		124A9DF21E9CD059000E07E8 /* AssetSectionInfo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AssetSectionInfo.swift; sourceTree = "<group>"; };
+		124A9DF31E9CD059000E07E8 /* FAMImagePickerNavigationHeader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FAMImagePickerNavigationHeader.swift; sourceTree = "<group>"; };
+		124A9DF41E9CD059000E07E8 /* MediaPickerCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MediaPickerCell.swift; sourceTree = "<group>"; };
+		124A9DF51E9CD059000E07E8 /* MediaPickerController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MediaPickerController.swift; sourceTree = "<group>"; };
+		124A9DF61E9CD059000E07E8 /* MediaPickerHeader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MediaPickerHeader.swift; sourceTree = "<group>"; };
+		124A9DF71E9CD059000E07E8 /* MediaPickerProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MediaPickerProtocol.swift; sourceTree = "<group>"; };
+		124A9DFE1E9CD97E000E07E8 /* siko.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = siko.jpg; sourceTree = "<group>"; };
+		34BC37E9030201DC6AC40C52 /* Pods-Sumo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Sumo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Sumo/Pods-Sumo.debug.xcconfig"; sourceTree = "<group>"; };
+		3DF498117778ADDF5568AB63 /* Pods-SumoTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SumoTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SumoTests/Pods-SumoTests.debug.xcconfig"; sourceTree = "<group>"; };
+		5390A45D5860C40221FCDD15 /* Pods_Keiko.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Keiko.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6665F7392961F148A481334F /* Pods-Keiko.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Keiko.release.xcconfig"; path = "Pods/Target Support Files/Pods-Keiko/Pods-Keiko.release.xcconfig"; sourceTree = "<group>"; };
+		79027E3EDBACB4B2551BFE2C /* Pods-Keiko.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Keiko.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Keiko/Pods-Keiko.debug.xcconfig"; sourceTree = "<group>"; };
+		7EEAE3D24F1B4F933852D800 /* Pods_SumoTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SumoTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		845299CB5739149EA11A42F5 /* Pods-Sumo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Sumo.release.xcconfig"; path = "Pods/Target Support Files/Pods-Sumo/Pods-Sumo.release.xcconfig"; sourceTree = "<group>"; };
+		A88FA029E478C36BE19A2894 /* Pods_Sumo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Sumo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -36,6 +84,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C30EDDC26A0ECC96618E0920 /* Pods_Sumo.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -44,6 +93,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				124A9D9E1E9CCD4B000E07E8 /* Sumo.framework in Frameworks */,
+				6677DE2AEFB6C9481F568C2A /* Pods_SumoTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		124A9DDD1E9CD03F000E07E8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0A7F3AA5116D1C2544CD7D4B /* Pods_Keiko.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -55,7 +113,10 @@
 			children = (
 				124A9D961E9CCD4B000E07E8 /* Sumo */,
 				124A9DA11E9CCD4B000E07E8 /* SumoTests */,
+				124A9DE11E9CD03F000E07E8 /* Keiko */,
 				124A9D951E9CCD4B000E07E8 /* Products */,
+				A9E2A8958163880D90261BDB /* Pods */,
+				B1E59715A0B26FA2972CD7AD /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -64,6 +125,7 @@
 			children = (
 				124A9D941E9CCD4B000E07E8 /* Sumo.framework */,
 				124A9D9D1E9CCD4B000E07E8 /* SumoTests.xctest */,
+				124A9DE01E9CD03F000E07E8 /* Keiko.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -72,6 +134,11 @@
 			isa = PBXGroup;
 			children = (
 				124A9D971E9CCD4B000E07E8 /* Sumo.h */,
+				124A9DAE1E9CCEF9000E07E8 /* Sumo.swift */,
+				124A9DB21E9CCF27000E07E8 /* Sumo+Item.swift */,
+				124A9DB41E9CCF33000E07E8 /* Sumo+Session.swift */,
+				124A9DB61E9CCF45000E07E8 /* Sumo+FileManager.swift */,
+				124A9DB01E9CCF09000E07E8 /* Data+.swift */,
 				124A9D981E9CCD4B000E07E8 /* Info.plist */,
 			);
 			path = Sumo;
@@ -81,9 +148,52 @@
 			isa = PBXGroup;
 			children = (
 				124A9DA21E9CCD4B000E07E8 /* SumoTests.swift */,
+				124A9DFE1E9CD97E000E07E8 /* siko.jpg */,
 				124A9DA41E9CCD4B000E07E8 /* Info.plist */,
 			);
 			path = SumoTests;
+			sourceTree = "<group>";
+		};
+		124A9DE11E9CD03F000E07E8 /* Keiko */ = {
+			isa = PBXGroup;
+			children = (
+				124A9DE21E9CD03F000E07E8 /* AppDelegate.swift */,
+				124A9DE41E9CD03F000E07E8 /* ViewController.swift */,
+				124A9DF21E9CD059000E07E8 /* AssetSectionInfo.swift */,
+				124A9DF31E9CD059000E07E8 /* FAMImagePickerNavigationHeader.swift */,
+				124A9DF41E9CD059000E07E8 /* MediaPickerCell.swift */,
+				124A9DF51E9CD059000E07E8 /* MediaPickerController.swift */,
+				124A9DF61E9CD059000E07E8 /* MediaPickerHeader.swift */,
+				124A9DF71E9CD059000E07E8 /* MediaPickerProtocol.swift */,
+				124A9DE61E9CD03F000E07E8 /* Main.storyboard */,
+				124A9DE91E9CD03F000E07E8 /* Assets.xcassets */,
+				124A9DEB1E9CD03F000E07E8 /* LaunchScreen.storyboard */,
+				124A9DEE1E9CD03F000E07E8 /* Info.plist */,
+			);
+			path = Keiko;
+			sourceTree = "<group>";
+		};
+		A9E2A8958163880D90261BDB /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				34BC37E9030201DC6AC40C52 /* Pods-Sumo.debug.xcconfig */,
+				845299CB5739149EA11A42F5 /* Pods-Sumo.release.xcconfig */,
+				3DF498117778ADDF5568AB63 /* Pods-SumoTests.debug.xcconfig */,
+				07059E01320D4B6203B8FED8 /* Pods-SumoTests.release.xcconfig */,
+				79027E3EDBACB4B2551BFE2C /* Pods-Keiko.debug.xcconfig */,
+				6665F7392961F148A481334F /* Pods-Keiko.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		B1E59715A0B26FA2972CD7AD /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A88FA029E478C36BE19A2894 /* Pods_Sumo.framework */,
+				7EEAE3D24F1B4F933852D800 /* Pods_SumoTests.framework */,
+				5390A45D5860C40221FCDD15 /* Pods_Keiko.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -104,10 +214,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 124A9DA81E9CCD4B000E07E8 /* Build configuration list for PBXNativeTarget "Sumo" */;
 			buildPhases = (
+				AA44C99F9CA7676181D043C8 /* [CP] Check Pods Manifest.lock */,
 				124A9D8F1E9CCD4B000E07E8 /* Sources */,
 				124A9D901E9CCD4B000E07E8 /* Frameworks */,
 				124A9D911E9CCD4B000E07E8 /* Headers */,
 				124A9D921E9CCD4B000E07E8 /* Resources */,
+				8CC2045D5E538D13D73501C1 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -122,9 +234,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 124A9DAB1E9CCD4B000E07E8 /* Build configuration list for PBXNativeTarget "SumoTests" */;
 			buildPhases = (
+				E6A3F33EAA12128CAAFD13E0 /* [CP] Check Pods Manifest.lock */,
 				124A9D991E9CCD4B000E07E8 /* Sources */,
 				124A9D9A1E9CCD4B000E07E8 /* Frameworks */,
 				124A9D9B1E9CCD4B000E07E8 /* Resources */,
+				8CB39AF38B6B11844C6A051A /* [CP] Embed Pods Frameworks */,
+				8415B2F1D4D9BD43FE80147B /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -135,6 +250,26 @@
 			productName = SumoTests;
 			productReference = 124A9D9D1E9CCD4B000E07E8 /* SumoTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		124A9DDF1E9CD03F000E07E8 /* Keiko */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 124A9DEF1E9CD03F000E07E8 /* Build configuration list for PBXNativeTarget "Keiko" */;
+			buildPhases = (
+				A8BA65867D341AAA4CE0B9F9 /* [CP] Check Pods Manifest.lock */,
+				124A9DDC1E9CD03F000E07E8 /* Sources */,
+				124A9DDD1E9CD03F000E07E8 /* Frameworks */,
+				124A9DDE1E9CD03F000E07E8 /* Resources */,
+				308F6E012A24D7C98DB93BE6 /* [CP] Embed Pods Frameworks */,
+				954C8BD3104F2E3D1D3478DE /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Keiko;
+			productName = Keiko;
+			productReference = 124A9DE01E9CD03F000E07E8 /* Keiko.app */;
+			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
 
@@ -149,9 +284,15 @@
 					124A9D931E9CCD4B000E07E8 = {
 						CreatedOnToolsVersion = 8.3;
 						DevelopmentTeam = 88ACA86N96;
+						LastSwiftMigration = 0830;
 						ProvisioningStyle = Automatic;
 					};
 					124A9D9C1E9CCD4B000E07E8 = {
+						CreatedOnToolsVersion = 8.3;
+						DevelopmentTeam = 88ACA86N96;
+						ProvisioningStyle = Automatic;
+					};
+					124A9DDF1E9CD03F000E07E8 = {
 						CreatedOnToolsVersion = 8.3;
 						DevelopmentTeam = 88ACA86N96;
 						ProvisioningStyle = Automatic;
@@ -164,6 +305,7 @@
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
+				Base,
 			);
 			mainGroup = 124A9D8A1E9CCD4B000E07E8;
 			productRefGroup = 124A9D951E9CCD4B000E07E8 /* Products */;
@@ -172,6 +314,7 @@
 			targets = (
 				124A9D931E9CCD4B000E07E8 /* Sumo */,
 				124A9D9C1E9CCD4B000E07E8 /* SumoTests */,
+				124A9DDF1E9CD03F000E07E8 /* Keiko */,
 			);
 		};
 /* End PBXProject section */
@@ -188,16 +331,155 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				124A9DFF1E9CD97E000E07E8 /* siko.jpg in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		124A9DDE1E9CD03F000E07E8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				124A9DED1E9CD03F000E07E8 /* LaunchScreen.storyboard in Resources */,
+				124A9DEA1E9CD03F000E07E8 /* Assets.xcassets in Resources */,
+				124A9DE81E9CD03F000E07E8 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		308F6E012A24D7C98DB93BE6 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Keiko/Pods-Keiko-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8415B2F1D4D9BD43FE80147B /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SumoTests/Pods-SumoTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8CB39AF38B6B11844C6A051A /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SumoTests/Pods-SumoTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8CC2045D5E538D13D73501C1 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Sumo/Pods-Sumo-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		954C8BD3104F2E3D1D3478DE /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Keiko/Pods-Keiko-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A8BA65867D341AAA4CE0B9F9 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		AA44C99F9CA7676181D043C8 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		E6A3F33EAA12128CAAFD13E0 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		124A9D8F1E9CCD4B000E07E8 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				124A9DB51E9CCF33000E07E8 /* Sumo+Session.swift in Sources */,
+				124A9DB71E9CCF45000E07E8 /* Sumo+FileManager.swift in Sources */,
+				124A9DAF1E9CCEF9000E07E8 /* Sumo.swift in Sources */,
+				124A9DB11E9CCF09000E07E8 /* Data+.swift in Sources */,
+				124A9DB31E9CCF27000E07E8 /* Sumo+Item.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -206,6 +488,21 @@
 			buildActionMask = 2147483647;
 			files = (
 				124A9DA31E9CCD4B000E07E8 /* SumoTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		124A9DDC1E9CD03F000E07E8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				124A9DE51E9CD03F000E07E8 /* ViewController.swift in Sources */,
+				124A9DF91E9CD059000E07E8 /* FAMImagePickerNavigationHeader.swift in Sources */,
+				124A9DE31E9CD03F000E07E8 /* AppDelegate.swift in Sources */,
+				124A9DFA1E9CD059000E07E8 /* MediaPickerCell.swift in Sources */,
+				124A9DFD1E9CD059000E07E8 /* MediaPickerProtocol.swift in Sources */,
+				124A9DFB1E9CD059000E07E8 /* MediaPickerController.swift in Sources */,
+				124A9DF81E9CD059000E07E8 /* AssetSectionInfo.swift in Sources */,
+				124A9DFC1E9CD059000E07E8 /* MediaPickerHeader.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -218,6 +515,25 @@
 			targetProxy = 124A9D9F1E9CCD4B000E07E8 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		124A9DE61E9CD03F000E07E8 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				124A9DE71E9CD03F000E07E8 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		124A9DEB1E9CD03F000E07E8 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				124A9DEC1E9CD03F000E07E8 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		124A9DA61E9CCD4B000E07E8 /* Debug */ = {
@@ -323,7 +639,9 @@
 		};
 		124A9DA91E9CCD4B000E07E8 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 34BC37E9030201DC6AC40C52 /* Pods-Sumo.debug.xcconfig */;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = 88ACA86N96;
@@ -336,13 +654,16 @@
 				PRODUCT_BUNDLE_IDENTIFIER = inc.stamp.Sumo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
 		124A9DAA1E9CCD4B000E07E8 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 845299CB5739149EA11A42F5 /* Pods-Sumo.release.xcconfig */;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = 88ACA86N96;
@@ -361,7 +682,9 @@
 		};
 		124A9DAC1E9CCD4B000E07E8 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3DF498117778ADDF5568AB63 /* Pods-SumoTests.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				DEVELOPMENT_TEAM = 88ACA86N96;
 				INFOPLIST_FILE = SumoTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -373,11 +696,41 @@
 		};
 		124A9DAD1E9CCD4B000E07E8 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 07059E01320D4B6203B8FED8 /* Pods-SumoTests.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				DEVELOPMENT_TEAM = 88ACA86N96;
 				INFOPLIST_FILE = SumoTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = inc.stamp.SumoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		124A9DF01E9CD03F000E07E8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 79027E3EDBACB4B2551BFE2C /* Pods-Keiko.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 88ACA86N96;
+				INFOPLIST_FILE = Keiko/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = inc.stamp.Keiko;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		124A9DF11E9CD03F000E07E8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6665F7392961F148A481334F /* Pods-Keiko.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 88ACA86N96;
+				INFOPLIST_FILE = Keiko/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = inc.stamp.Keiko;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 			};
@@ -402,6 +755,7 @@
 				124A9DAA1E9CCD4B000E07E8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		124A9DAB1E9CCD4B000E07E8 /* Build configuration list for PBXNativeTarget "SumoTests" */ = {
 			isa = XCConfigurationList;
@@ -410,6 +764,16 @@
 				124A9DAD1E9CCD4B000E07E8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		124A9DEF1E9CD03F000E07E8 /* Build configuration list for PBXNativeTarget "Keiko" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				124A9DF01E9CD03F000E07E8 /* Debug */,
+				124A9DF11E9CD03F000E07E8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
