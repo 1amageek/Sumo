@@ -28,6 +28,14 @@
 		124A9DFC1E9CD059000E07E8 /* MediaPickerHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 124A9DF61E9CD059000E07E8 /* MediaPickerHeader.swift */; };
 		124A9DFD1E9CD059000E07E8 /* MediaPickerProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 124A9DF71E9CD059000E07E8 /* MediaPickerProtocol.swift */; };
 		124A9DFF1E9CD97E000E07E8 /* siko.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 124A9DFE1E9CD97E000E07E8 /* siko.jpg */; };
+		124A9E011E9E1073000E07E8 /* TestLibraryManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 124A9E001E9E1073000E07E8 /* TestLibraryManager.swift */; };
+		124A9E031E9E1778000E07E8 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 124A9DE41E9CD03F000E07E8 /* ViewController.swift */; };
+		124A9E041E9E1778000E07E8 /* AssetSectionInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 124A9DF21E9CD059000E07E8 /* AssetSectionInfo.swift */; };
+		124A9E051E9E1778000E07E8 /* FAMImagePickerNavigationHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 124A9DF31E9CD059000E07E8 /* FAMImagePickerNavigationHeader.swift */; };
+		124A9E061E9E1778000E07E8 /* MediaPickerCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 124A9DF41E9CD059000E07E8 /* MediaPickerCell.swift */; };
+		124A9E071E9E1778000E07E8 /* MediaPickerController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 124A9DF51E9CD059000E07E8 /* MediaPickerController.swift */; };
+		124A9E081E9E1778000E07E8 /* MediaPickerHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 124A9DF61E9CD059000E07E8 /* MediaPickerHeader.swift */; };
+		124A9E091E9E1778000E07E8 /* MediaPickerProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 124A9DF71E9CD059000E07E8 /* MediaPickerProtocol.swift */; };
 		6677DE2AEFB6C9481F568C2A /* Pods_SumoTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7EEAE3D24F1B4F933852D800 /* Pods_SumoTests.framework */; };
 		C30EDDC26A0ECC96618E0920 /* Pods_Sumo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A88FA029E478C36BE19A2894 /* Pods_Sumo.framework */; };
 /* End PBXBuildFile section */
@@ -69,6 +77,7 @@
 		124A9DF61E9CD059000E07E8 /* MediaPickerHeader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MediaPickerHeader.swift; sourceTree = "<group>"; };
 		124A9DF71E9CD059000E07E8 /* MediaPickerProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MediaPickerProtocol.swift; sourceTree = "<group>"; };
 		124A9DFE1E9CD97E000E07E8 /* siko.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = siko.jpg; sourceTree = "<group>"; };
+		124A9E001E9E1073000E07E8 /* TestLibraryManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestLibraryManager.swift; sourceTree = "<group>"; };
 		34BC37E9030201DC6AC40C52 /* Pods-Sumo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Sumo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Sumo/Pods-Sumo.debug.xcconfig"; sourceTree = "<group>"; };
 		3DF498117778ADDF5568AB63 /* Pods-SumoTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SumoTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SumoTests/Pods-SumoTests.debug.xcconfig"; sourceTree = "<group>"; };
 		5390A45D5860C40221FCDD15 /* Pods_Keiko.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Keiko.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -148,6 +157,7 @@
 			isa = PBXGroup;
 			children = (
 				124A9DA21E9CCD4B000E07E8 /* SumoTests.swift */,
+				124A9E001E9E1073000E07E8 /* TestLibraryManager.swift */,
 				124A9DFE1E9CD97E000E07E8 /* siko.jpg */,
 				124A9DA41E9CCD4B000E07E8 /* Info.plist */,
 			);
@@ -475,10 +485,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				124A9E081E9E1778000E07E8 /* MediaPickerHeader.swift in Sources */,
+				124A9E091E9E1778000E07E8 /* MediaPickerProtocol.swift in Sources */,
 				124A9DB51E9CCF33000E07E8 /* Sumo+Session.swift in Sources */,
+				124A9E041E9E1778000E07E8 /* AssetSectionInfo.swift in Sources */,
 				124A9DB71E9CCF45000E07E8 /* Sumo+FileManager.swift in Sources */,
 				124A9DAF1E9CCEF9000E07E8 /* Sumo.swift in Sources */,
+				124A9E031E9E1778000E07E8 /* ViewController.swift in Sources */,
 				124A9DB11E9CCF09000E07E8 /* Data+.swift in Sources */,
+				124A9E071E9E1778000E07E8 /* MediaPickerController.swift in Sources */,
+				124A9E051E9E1778000E07E8 /* FAMImagePickerNavigationHeader.swift in Sources */,
+				124A9E061E9E1778000E07E8 /* MediaPickerCell.swift in Sources */,
 				124A9DB31E9CCF27000E07E8 /* Sumo+Item.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -488,6 +505,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				124A9DA31E9CCD4B000E07E8 /* SumoTests.swift in Sources */,
+				124A9E011E9E1073000E07E8 /* TestLibraryManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

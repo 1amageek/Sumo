@@ -8,7 +8,6 @@
 
 import UIKit
 import Photos
-import Sumo
 
 protocol MediaPickerDelegate: class {
     func MediaPickerController(controller: MediaPickerController, didFinishPickingAssets assets: [PHAsset]) -> Void
@@ -187,8 +186,9 @@ class MediaPickerController: UIViewController, MediaPickerHeaderDelegate, UIColl
             default: break
             }
         }
-        
-        Sumo.shared.startSession()
+        var options: Sumo.Session.Options = Sumo.Session.Options()
+        options.imageTargetSize = CGSize(width: 500, height: 500)
+        Sumo.shared.startSession(options: options)
         
     }
     

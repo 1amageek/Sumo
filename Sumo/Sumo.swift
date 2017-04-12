@@ -24,17 +24,6 @@ public class Sumo {
         case zipError
     }
     
-    public struct Configure {
-        struct Image {
-            static let targetSize: CGSize = CGSize(width: 2000, height: 2000)
-            static let comperesionQuality: CGFloat = 0.8
-        }
-        struct Video {
-            static let targetSize: CGSize = CGSize(width: 2000, height: 2000)
-            static let comperesionQuality: CGFloat = 0.6
-        }
-    }
-    
     public static let shared: Sumo = Sumo()
     
     private let sessionQueue: DispatchQueue = DispatchQueue(label: "Sumo.queue")
@@ -48,8 +37,8 @@ public class Sumo {
     private(set) var currentSession: Sumo.Session?
     
     @discardableResult
-    public func startSession(sessionID: String = UUID().uuidString) -> Sumo.Session {
-        let session: Session = Session(sessionID: sessionID, queue: sessionQueue)
+    public func startSession(sessionID: String = UUID().uuidString, options: Sumo.Session.Options = Sumo.Session.Options()) -> Sumo.Session {
+        let session: Session = Session(sessionID: sessionID, options: options, queue: sessionQueue)
         if !self.sessions.contains(session) {
             self.sessions.append(session)
         }
@@ -65,7 +54,7 @@ public class Sumo {
         let item: Item = Item(localID: localIdentifier)
         let workItem: DispatchWorkItem
         workItem = DispatchWorkItem(block: {
-            self.pack(item) { (error) in
+            self.load(item) { (error) in
                 if let error = error {
                     block(error)
                     return
@@ -111,8 +100,10 @@ public class Sumo {
     // MARK: Workflow -
     
     // 画像・動画を取得
-    private func pack(_ item: Item, block: @escaping (Error?) -> Void) {
-        
+    private func load(_ item: Item, block: @escaping (Error?) -> Void) {
+        guard let session: Session = self.currentSession else {
+            fatalError("[Sumo] *** error: Sumo have not session")
+        }
         guard let workItem: DispatchWorkItem = item.workItem else {
             fatalError("[Sumo] *** error: item have not workItem")
         }
@@ -135,7 +126,7 @@ public class Sumo {
                         block(SumoError.cancelled)
                         return
                     }
-                    if let data: Data = data!.resize(Configure.Image.targetSize, comperesionQuality: Configure.Image.comperesionQuality) {
+                    if let data: Data = data!.resize(session.options.imageTargetSize, comperesionQuality: session.options.imageComperesionQuality) {
                         item.data = data
                         debugPrint("[Sumo] get image data")
                         block(nil)
@@ -153,7 +144,7 @@ public class Sumo {
                         return
                     }
                     // Thumbnailをリサイズ
-                    if let data: Data = thumbnail!.resize(Configure.Video.targetSize, comperesionQuality: Configure.Video.comperesionQuality) {
+                    if let data: Data = thumbnail!.resize(session.options.videoTargetSize, comperesionQuality: session.options.videoComperesionQuality) {
                         item.data = data
                         debugPrint("[Sumo] get video thumbnail data")
                         block(nil)

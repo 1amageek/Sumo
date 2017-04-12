@@ -8,7 +8,6 @@
 
 import UIKit
 import Photos
-import Sumo
 
 class MediaPickerCell: UICollectionViewCell {
 

@@ -12,13 +12,23 @@ extension Sumo {
     
     public class Session: Hashable {
         
+        public struct Options {
+            var imageTargetSize: CGSize = CGSize(width: 2000, height: 2000)
+            var imageComperesionQuality: CGFloat = 0.8
+            var videoTargetSize: CGSize = CGSize(width: 2000, height: 2000)
+            var videoComperesionQuality: CGFloat = 0.8
+        }
+        
         public let sessionID: String
+        
+        public let options: Options
         
         public let queue: DispatchQueue
         
         public let workGroup: DispatchGroup = DispatchGroup()
         
         public var url: URL?
+        
         
         // zip(tar)化されたファイルのURL
         public var packageURL: URL?
@@ -27,8 +37,9 @@ extension Sumo {
         
         private(set) var isCanceled: Bool = false
         
-        init(sessionID: String, queue: DispatchQueue) {
+        init(sessionID: String, options: Options, queue: DispatchQueue) {
             self.sessionID = sessionID
+            self.options = options
             self.queue = queue
         }
         
