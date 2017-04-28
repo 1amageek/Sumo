@@ -20,18 +20,26 @@ One compressed file can communicate without overhead.
 
 ## Usage
 
+Sumo consists of sessions and tasks.
+Multiple tasks are associated with one session, and you can obtain obtain artifacts by zip the session.
+
 ``` swift
 override func viewDidLoad() {
     super.viewDidLoad()
     var options: Sumo.Session.Options = Sumo.Session.Options()
-    options.imageTargetSize = CGSize(width: 500, height: 500)
+    // Target of image resizing
+    options.imageTargetSize = CGSize(width: 500, height: 500)
     Sumo.shared.startSession(options: options)
 }
 ```
 
-For example in CollectionView's `func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath)` `func collectionView(_ collectionView: UICollectionView, didDeselectItemAt indexPath: IndexPath)`
+For example in CollectionView's
+
+- `func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath)` 
+- `func collectionView(_ collectionView: UICollectionView, didDeselectItemAt indexPath: IndexPath)`
 
 ``` swift
+// Compress and process the image in the background.
 func didSelectItem(indexPath: IndexPath, asset: PHAsset) {
     Sumo.shared.startWorflow(asset.localIdentifier) { (error) in
         if let error = error {
@@ -41,7 +49,27 @@ func didSelectItem(indexPath: IndexPath, asset: PHAsset) {
     }
 }
 
+// Cancel the image being compressed.
 func didDeselectItem(indexPath: IndexPath, asset: PHAsset) {
     Sumo.shared.cancel(asset.localIdentifier)
+}
+```
+
+``` swift
+// Stop all processing.
+@objc private func cancel() {
+    Sumo.shared.stop()
+}
+
+// Cancel the task being processed. The session will continue to remain.
+@objc private func reset() {
+    Sumo.shared.reset()
+}
+
+// Compress the resized photo to zip.
+@objc private func zip() {
+    Sumo.shared.zip { (url, error) in
+        // Transfer to any server.
+    }
 }
 ```
