@@ -16,3 +16,32 @@ One compressed file can communicate without overhead.
 - ☑️  Fast resizing.
 - ☑️  Task is cancelable.
 - ☑️  Multi sessions.
+
+
+## Usage
+
+``` swift
+override func viewDidLoad() {
+    super.viewDidLoad()
+    var options: Sumo.Session.Options = Sumo.Session.Options()
+    options.imageTargetSize = CGSize(width: 500, height: 500)
+    Sumo.shared.startSession(options: options)
+}
+```
+
+For example in CollectionView's `func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath)` `func collectionView(_ collectionView: UICollectionView, didDeselectItemAt indexPath: IndexPath)`
+
+``` swift
+func didSelectItem(indexPath: IndexPath, asset: PHAsset) {
+    Sumo.shared.startWorflow(asset.localIdentifier) { (error) in
+        if let error = error {
+            debugPrint(error)
+            return
+        }
+    }
+}
+
+func didDeselectItem(indexPath: IndexPath, asset: PHAsset) {
+    Sumo.shared.cancel(asset.localIdentifier)
+}
+```
