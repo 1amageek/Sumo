@@ -73,3 +73,5 @@ func didDeselectItem(indexPath: IndexPath, asset: PHAsset) {
     }
 }
 ```
+ 
+[AssemblyLine](https://github.com/1amageek/AssemblyLine) is generalized to Sumo.
